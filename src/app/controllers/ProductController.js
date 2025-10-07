@@ -22,10 +22,14 @@ class ProductController {
          path
     });
 
- 
-
-  return res.status(201).json([{ message: "Product created" }]);
+    return res.status(201).json([{ message: "Product created" }]);
   }
-  } 
+
+  async index(req, res) {
+    const products = await Product.findAll();
+    
+    return res.json(products);
+  }
+}
 
 export default new ProductController();
