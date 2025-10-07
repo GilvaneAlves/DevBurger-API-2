@@ -1,88 +1,40 @@
-# ========================
-# ⚙️ Node.js / JavaScript
-# ========================
+# Dependências
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
-# ========================
-# 🧩 Build / Dist
-# ========================
+# Build / cache
 dist/
 build/
-out/
-tmp/
-temp/
 .cache/
+.tmp/
 coverage/
-.vscode-test/
+.vscode/
+.idea/
 
-# ========================
-# 🧠 VS Code / Editor
-# ========================
-.vscode/*
-!.vscode/settings.json
-!.vscode/extensions.json
-!.vscode/launch.json
-!.vscode/tasks.json
+# Logs
+logs/
+*.log
+*.log.*
+log/
+pids/
+*.pid
+*.seed
+*.pid.lock
 
-# ========================
-# 🔥 Firebase
-# ========================
-.firebase/
-.firebaserc
-firebase-debug.log
-firebase-debug.*
-storage-debug.log
-
-# ========================
-# 💻 Sistema Operacional
-# ========================
-.DS_Store
-Thumbs.db
-ehthumbs.db
-desktop.ini
-
-# ========================
-# 🧠 Ambiente / Senhas
-# ========================
+# Ambiente
 .env
 .env.local
-.env.development
-.env.production
-.env.test
+.env.*.local
 
-# ========================
-# 📦 Outros arquivos temporários
-# ========================
-*.log
-*.tmp
-*.bak
-*.swp
-*.swo
-*.orig
-*.lock
+# Sistema/Editor
+.DS_Store
+Thumbs.db
 
-# ========================
-# 🚀 PWA / Frontend
-# ========================
-.cache/
-node_modules/
-*.map
-*.zip
-*.tar.gz
-
-# ========================
-# 🧩 IntelliJ / WebStorm
-# ========================
-.idea/
-*.iml
-
-# ========================
-# 🧰 Backup de sistema
-# ========================
-*.old
-*.save
-*.backup
+# Uploads (gerados em runtime)
+uploads/

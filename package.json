@@ -4,7 +4,10 @@
   "description": "DevBurger API 2",
   "main": "src/server.js",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write ."
   },
   "author": {
     "name": "Gilvane Alves",
@@ -12,17 +15,28 @@
   },
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0"
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
+    "pg": "^8.16.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7",
+    "uuid": "^13.0.0",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.36.0",
+    "@eslint/js": "^9.37.0",
     "@eslint/json": "^0.13.2",
-    "eslint": "^8.57.1",
+    "eslint": "^9.37.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-json": "^4.0.1",
     "eslint-plugin-prettier": "^5.5.4",
     "nodemon": "^3.1.10",
     "prettier": "^3.6.2",
+    "sequelize-cli": "^6.6.3",
     "sucrase": "^3.35.0"
   }
 }
